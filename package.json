@@ -1,0 +1,34 @@
+{
+  "name" : "xby-white-balance",
+  "version" : "1.0.0",
+  "description" : "输入偏色或偏温图片，自动校正白平衡还原中性灰与真实色彩，去除偏冷或偏暖色偏，适用于照片调色、产品拍摄、监控与实景记录等场景。返回JSON格式数据，包含结果图片下载链接。",
+  "keywords" : [ "xby-white-balance", "xby", "white", "balance", "白平衡" ],
+  "license" : "MIT",
+  "type" : "module",
+  "main" : "./dist/index.js",
+  "files" : [ "dist", "cordis.patch.yml" ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/xby_skill/xby-white-balance.git"
+  },
+  "homepage" : "",
+  "bugs" : {
+    "url" : "https://github.com/xby_skill/xby-white-balance/issues"
+  },
+  "author" : "",
+  "scripts" : {
+    "build" : "tsc",
+    "watch" : "tsc --watch"
+  },
+  "dependencies" : { },
+  "peerDependencies" : { },
+  "dsh" : {
+    "bundle" : {
+      "patch" : "./cordis.patch.yml"
+    }
+  },
+  "devDependencies" : {
+    "@types/node" : "^26.3.0",
+    "typescript" : "^7.0.2"
+  }
+}
